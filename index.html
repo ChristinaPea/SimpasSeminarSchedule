@@ -26,83 +26,92 @@
             color: white;
         }
         .big-text {
-            font-size: 36px;
+            font-size: 4vw;
             font-weight: bold;
         }
         .small-text {
-            font-size: 20px;
+            font-size: 2vw;
         }
         .container {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 4vw;
             background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px;
-            width: calc(100% - 20px);
-            margin-left: 10px;
-            margin-right: 10px;
+            border-radius: 4vw;
+            box-shadow: 0 0 2vw rgba(0, 0, 0, 0.1);
+            margin: 4vw;
+            width: calc(100% - 8vw);
             box-sizing: border-box;
-           
-
         }
         img {
-           
-            max-width: 20%; /* Max width for Simpas Logo */
-            margin-bottom: 20px;
-            max-size: 100%;
+            width: 20vw;
+            max-width: 100%;
+            margin-bottom: 4vw;
             height: auto;
         }
         h1, p {
             color: #333;
-            margin-bottom: 10px;
-            text-align: center;
+            margin-bottom: 2vw;
+            font-size: 3vw;
         }
         .button-container {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: stretch;
-            margin-top: 20px;
-           
+            margin-top: 2vw;
         }
         button {
-            flex: 3;
-            padding: 3px 30px; /* Adjusted padding for buttons */
-            font-size: 18px; /* Adjusted font size for buttons */
-            margin: 0 40px;
-            max-width: 300px;
-            min-width: 180px;
+            flex: 1;
+            width: 48%; /* Equal width with a small gap in between */
+            padding: 1vw 2vw;
+            font-size: 2vw;
+            margin: 0 1vw;
+            max-width: 100%;
             color: white;
             background-color: rgb(70, 84, 221);
             border-color: rgb(70, 84, 221);
-            border-radius: 10px;
+            border-radius: 1vw;
+            cursor: pointer;
         }
 
-        /* Media Queries for responsiveness */
         @media (max-width: 768px) {
-            img {
-                width: 80%;
-            }
-            .button-container {
-                flex-direction: column;
-                margin-top: 10px;
-            }
-            button {
-                margin-top: 10px;
+            .big-text, .small-text, h1, p {
+                font-size: 5vw;
             }
         }
 
         @media (max-width: 600px) {
-            img {
-                width: 40%;
+            .big-text, .small-text, h1, p {
+                font-size: 6vw;
             }
         }
+
         @media (max-width: 1200px) {
+            .big-text {
+                font-size: 3vw;
+            }
+            .small-text {
+                font-size: 1.5vw;
+            }
+            h1, p {
+                font-size: 2.5vw;
+            }
+            .container {
+                width: calc(100% - 4vw);
+                padding: 2vw;
+                margin: 2vw;
+            }
             img {
-                width: 60%;
+                width: 15vw;
+                margin-bottom: 2vw;
+            }
+            button {
+                padding: 0.5vw 2vw;
+                font-size: 1.5vw;
+                margin: 0.5vw;
+                border-radius: 0.5vw;
             }
         }
     </style>
@@ -123,3 +132,4 @@
     </div>
 </body>
 </html>
+
