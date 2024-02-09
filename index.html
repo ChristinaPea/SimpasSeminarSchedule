@@ -25,27 +25,18 @@
             top: 10%;
             right: 20px;
             color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+            text-align: right;
         }
 
         .big-text {
-            font-size: 4vw;
+            font-size: 3vw;
             font-weight: bold;
         }
 
         .small-text {
-            font-size: 2vw;
+            font-size: 1.5vw;
             max-width: 80%;
-            text-align: right;
-            word-wrap: break-word;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            white-space: normal; /* Allow line breaks */
+            white-space: nowrap;
         }
 
         .container {
@@ -54,42 +45,42 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 4vw;
+            padding: 2vw;
             background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 4vw;
-            box-shadow: 0 0 2vw rgba(0, 0, 0, 0.1);
-            margin: 4vw;
-            width: calc(100% - 8vw);
+            border-radius: 2vw;
+            box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+            margin: 2vw;
+            width: calc(100% - 4vw);
             box-sizing: border-box;
-            overflow: visible; /* Allow content to overflow */
+            overflow: visible;
         }
 
         img {
-            width: 20vw;
+            width: 15vw;
             max-width: 100%;
-            margin-right: 4vw;
+            margin-right: 2vw;
             height: auto;
         }
 
         h1, p {
             color: #333;
-            margin-bottom: 2vw;
-            font-size: 3vw;
+            margin-bottom: 1vw;
+            font-size: 2vw;
         }
 
         .button-container {
             display: flex;
             justify-content: space-between;
             align-items: stretch;
-            margin-top: 2vw;
+            margin-top: 1vw;
         }
 
         button {
             flex: 1;
             width: 48%;
-            padding: 1vw 2vw;
-            font-size: 2vw;
-            margin: 0 1vw;
+            padding: 0.5vw 1vw;
+            font-size: 1.5vw;
+            margin: 0.5vw;
             max-width: 100%;
             color: white;
             background-color: rgb(70, 84, 221);
@@ -100,34 +91,34 @@
 
         @media (max-width: 768px) {
             .big-text, .small-text, h1, p {
-                font-size: 5vw;
+                font-size: 4vw;
             }
         }
 
         @media (max-width: 600px) {
             .big-text, .small-text, h1, p {
-                font-size: 6vw;
+                font-size: 5vw;
             }
 
             .small-text {
-                font-size: 3vw;
+                font-size: 2.5vw;
             }
 
             .container {
-                width: calc(100% - 4vw);
-                padding: 2vw;
-                margin: 2vw;
+                width: calc(100% - 2vw);
+                padding: 1vw;
+                margin: 1vw;
             }
 
             img {
-                width: 15vw;
-                margin-right: 2vw;
+                width: 10vw;
+                margin-right: 1vw;
             }
 
             button {
-                padding: 0.5vw 2vw;
-                font-size: 3vw;
-                margin: 0.5vw;
+                padding: 0.3vw 1vw;
+                font-size: 1.2vw;
+                margin: 0.3vw;
                 border-radius: 0.5vw;
             }
         }
@@ -136,7 +127,7 @@
 <body>
     <div class="background-text">
         <span class="big-text">Simpas</span>
-        <span class="small-text">World-Class,<br>Multi-disciplinary research facility.</span>
+        <span class="small-text">World-Class, Multi-disciplinary research facility.</span>
     </div>
     <div class="container">
         <img src="Simpas_Logo.png" alt="Simpas Logo">
